@@ -7,7 +7,7 @@ import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 import java.sql.DriverManager
 import java.time.LocalDateTime
 
-object get_df_from_tablename extends LazyLogging {
+object df_functions extends LazyLogging {
   val jdbc_url = "jdbc:mysql://localhost:3306/transactions"
   val user = "root"
   val password = "admin"
@@ -28,6 +28,20 @@ object get_df_from_tablename extends LazyLogging {
         )
       )
       .load()
+  }
+
+  def run_sql(sqlStatement: String, jdbcUrl: String = jdbc_url) = {
+    val connection = DriverManager.getConnection(jdbcUrl, user, password);
+    val statement = connection.createStatement();
+    try {
+      statement.execute(sqlStatement);
+    } catch {
+      case e: Exception =>
+        logger.info(s"Error in SQL Statement ${e.getMessage}")
+    } finally {
+      statement.close()
+      connection.close()
+    }
   }
 
   // this function is not need (deprecated)
@@ -74,5 +88,19 @@ object get_df_from_tablename extends LazyLogging {
 
     logger.info(s"Successfully updated table $tableName")
   }
+  // we used above function like this below
+  // ######################################  UPDATE CONFIG TABLE (START DATE) #############################
+//  val df_updated_config_startDate = df_config_table_updated.withColumn(
+//    "start_date",
+//    when(col("id") === row_index, current_timestamp()).otherwise(
+//      col("start_date")
+//    )
+//  );
+//  df_updated_config_startDate.show();
+//  update_column_of_table(
+//    df_source = df_updated_config_startDate,
+//    tableName = "config"
+//  )
+  //####################################################################################################
 
 }

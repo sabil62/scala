@@ -19215,3 +19215,990 @@ message spark_schema {
 2025-03-29 13:54:17 [main] INFO  org.apache.spark.SparkContext - Successfully stopped SparkContext
 2025-03-29 13:54:17 [shutdown-hook-0] INFO  o.a.spark.util.ShutdownHookManager - Shutdown hook called
 2025-03-29 13:54:17 [shutdown-hook-0] INFO  o.a.spark.util.ShutdownHookManager - Deleting directory C:\Users\shres\AppData\Local\Temp\spark-4f06ab8a-d101-47f4-8349-b24367928802
+2025-04-02 22:14:53 [main] INFO  org.apache.spark.SparkContext - Running Spark version 3.4.4
+2025-04-02 22:14:54 [main] INFO  o.a.spark.resource.ResourceUtils - ==============================================================
+2025-04-02 22:14:54 [main] INFO  o.a.spark.resource.ResourceUtils - No custom resources configured for spark.driver.
+2025-04-02 22:14:54 [main] INFO  o.a.spark.resource.ResourceUtils - ==============================================================
+2025-04-02 22:14:54 [main] INFO  org.apache.spark.SparkContext - Submitted application: mysql config
+2025-04-02 22:14:54 [main] INFO  o.a.spark.resource.ResourceProfile - Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2025-04-02 22:14:54 [main] INFO  o.a.spark.resource.ResourceProfile - Limiting resource is cpu
+2025-04-02 22:14:54 [main] INFO  o.a.s.r.ResourceProfileManager - Added ResourceProfile id: 0
+2025-04-02 22:14:54 [main] INFO  org.apache.spark.SecurityManager - Changing view acls to: shres
+2025-04-02 22:14:54 [main] INFO  org.apache.spark.SecurityManager - Changing modify acls to: shres
+2025-04-02 22:14:54 [main] INFO  org.apache.spark.SecurityManager - Changing view acls groups to: 
+2025-04-02 22:14:54 [main] INFO  org.apache.spark.SecurityManager - Changing modify acls groups to: 
+2025-04-02 22:14:54 [main] INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: shres; groups with view permissions: EMPTY; users with modify permissions: shres; groups with modify permissions: EMPTY
+2025-04-02 22:14:54 [main] INFO  org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 50624.
+2025-04-02 22:14:54 [main] INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+2025-04-02 22:14:54 [main] INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+2025-04-02 22:14:55 [main] INFO  o.a.s.s.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2025-04-02 22:14:55 [main] INFO  o.a.s.s.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+2025-04-02 22:14:55 [main] INFO  org.apache.spark.SparkEnv - Registering BlockManagerMasterHeartbeat
+2025-04-02 22:14:55 [main] INFO  o.a.spark.storage.DiskBlockManager - Created local directory at C:\Users\shres\AppData\Local\Temp\blockmgr-1db16bdd-ee2a-4a19-8449-db7411908ed9
+2025-04-02 22:14:55 [main] INFO  o.a.spark.storage.memory.MemoryStore - MemoryStore started with capacity 4.5 GiB
+2025-04-02 22:14:55 [main] INFO  org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+2025-04-02 22:14:55 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @2707ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-04-02 22:14:55 [main] INFO  org.apache.spark.ui.JettyUtils - Start Jetty 0.0.0.0:4040 for SparkUI
+2025-04-02 22:14:55 [main] INFO  o.sparkproject.jetty.server.Server - jetty-9.4.54.v20240208; built: 2024-02-08T19:42:39.027Z; git: cef3fbd6d736a21e7d541a5db490381d95a2047d; jvm 11.0.25+9-LTS-256
+2025-04-02 22:14:55 [main] INFO  o.sparkproject.jetty.server.Server - Started @2831ms
+2025-04-02 22:14:55 [main] INFO  o.s.jetty.server.AbstractConnector - Started ServerConnector@4eb1c69{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-04-02 22:14:55 [main] INFO  org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@468dda3e{/,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  org.apache.spark.executor.Executor - Starting executor ID driver on host YAU
+2025-04-02 22:14:55 [main] INFO  org.apache.spark.executor.Executor - Starting executor with user classpath (userClassPathFirst = false): ''
+2025-04-02 22:14:55 [main] INFO  org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 50675.
+2025-04-02 22:14:55 [main] INFO  o.a.s.n.n.NettyBlockTransferService - Server created on YAU:50675
+2025-04-02 22:14:55 [main] INFO  o.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2025-04-02 22:14:55 [main] INFO  o.a.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, YAU, 50675, None)
+2025-04-02 22:14:55 [dispatcher-BlockManagerMaster] INFO  o.a.s.s.BlockManagerMasterEndpoint - Registering block manager YAU:50675 with 4.5 GiB RAM, BlockManagerId(driver, YAU, 50675, None)
+2025-04-02 22:14:55 [main] INFO  o.a.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, YAU, 50675, None)
+2025-04-02 22:14:55 [main] INFO  o.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, YAU, 50675, None)
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@468dda3e{/,null,STOPPED,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6bee793f{/jobs,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@43b5021c{/jobs/json,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4548d254{/jobs/job,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@208f0007{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@39c96e48{/stages,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@40d23c82{/stages/json,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@550de6b8{/stages/stage,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3c6c4689{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@594d9f07{/stages/pool,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5e9f73b{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2fd64b11{/storage,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@43d3aba5{/storage/json,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@76e9f00b{/storage/rdd,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6f1b8544{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@688a2c09{/environment,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@365cdacf{/environment/json,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@9efcd90{/executors,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2ee83775{/executors/json,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@b5de58f{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@abbe000{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5b9499fe{/static,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@49e4c2d5{/,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3e36b7a0{/api,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@777d0bc3{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2d85fb64{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4b960b5b{/metrics/json,null,AVAILABLE,@Spark}
+2025-04-02 22:14:55 [main] INFO  Main$ - Application started!
+2025-04-02 22:14:55 [main] INFO  Main$ - hdfs
+2025-04-02 22:14:55 [main] INFO  Main$ - LOGGING TEST - LOAD MYSQL DATA TO HDFS
+2025-04-02 22:14:56 [main] INFO  o.a.spark.sql.internal.SharedState - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+2025-04-02 22:14:56 [main] INFO  o.a.spark.sql.internal.SharedState - Warehouse path is 'file:/C:/Users/shres/IdeaProjects/hadoop/spark-warehouse'.
+2025-04-02 22:14:56 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1b0e9707{/SQL,null,AVAILABLE,@Spark}
+2025-04-02 22:14:56 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@74024f3{/SQL/json,null,AVAILABLE,@Spark}
+2025-04-02 22:14:56 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3fcee3d9{/SQL/execution,null,AVAILABLE,@Spark}
+2025-04-02 22:14:56 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@760487aa{/SQL/execution/json,null,AVAILABLE,@Spark}
+2025-04-02 22:14:56 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4faf104{/static/sql,null,AVAILABLE,@Spark}
+2025-04-02 22:15:00 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 261.8623 ms
+2025-04-02 22:15:00 [main] INFO  org.apache.spark.SparkContext - Starting job: show at Main.scala:34
+2025-04-02 22:15:00 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Got job 0 (show at Main.scala:34) with 1 output partitions
+2025-04-02 22:15:00 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (show at Main.scala:34)
+2025-04-02 22:15:00 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-04-02 22:15:00 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-04-02 22:15:00 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (MapPartitionsRDD[2] at show at Main.scala:34), which has no missing parents
+2025-04-02 22:15:00 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 14.6 KiB, free 4.5 GiB)
+2025-04-02 22:15:00 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 7.0 KiB, free 4.5 GiB)
+2025-04-02 22:15:00 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on YAU:50675 (size: 7.0 KiB, free: 4.5 GiB)
+2025-04-02 22:15:00 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 0 from broadcast at DAGScheduler.scala:1540
+2025-04-02 22:15:00 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at show at Main.scala:34) (first 15 tasks are for partitions Vector(0))
+2025-04-02 22:15:00 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 1 tasks resource profile 0
+2025-04-02 22:15:01 [dispatcher-event-loop-6] INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0) (YAU, executor driver, partition 0, PROCESS_LOCAL, 8667 bytes) 
+2025-04-02 22:15:01 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+2025-04-02 22:15:01 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  o.a.s.s.e.datasources.jdbc.JDBCRDD - closed connection
+2025-04-02 22:15:01 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 1846 bytes result sent to driver
+2025-04-02 22:15:01 [task-result-getter-0] INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 191 ms on YAU (executor driver) (1/1)
+2025-04-02 22:15:01 [task-result-getter-0] INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 0 (show at Main.scala:34) finished in 0.515 s
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 0: Stage finished
+2025-04-02 22:15:01 [main] INFO  o.a.spark.scheduler.DAGScheduler - Job 0 finished: show at Main.scala:34, took 0.557752 s
+2025-04-02 22:15:01 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 40.5507 ms
+2025-04-02 22:15:01 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 21.5247 ms
+2025-04-02 22:15:01 [main] INFO  org.apache.spark.SparkContext - Starting job: collect at Main.scala:37
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Got job 1 (collect at Main.scala:37) with 1 output partitions
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 1 (collect at Main.scala:37)
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 1 (MapPartitionsRDD[5] at collect at Main.scala:37), which has no missing parents
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 13.1 KiB, free 4.5 GiB)
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.2 KiB, free 4.5 GiB)
+2025-04-02 22:15:01 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on YAU:50675 (size: 6.2 KiB, free: 4.5 GiB)
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:1540
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[5] at collect at Main.scala:37) (first 15 tasks are for partitions Vector(0))
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 1 tasks resource profile 0
+2025-04-02 22:15:01 [dispatcher-event-loop-9] INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 1.0 (TID 1) (YAU, executor driver, partition 0, PROCESS_LOCAL, 8667 bytes) 
+2025-04-02 22:15:01 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 1.0 (TID 1)
+2025-04-02 22:15:01 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  o.a.s.s.e.datasources.jdbc.JDBCRDD - closed connection
+2025-04-02 22:15:01 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 1.0 (TID 1). 1773 bytes result sent to driver
+2025-04-02 22:15:01 [task-result-getter-1] INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 1.0 (TID 1) in 36 ms on YAU (executor driver) (1/1)
+2025-04-02 22:15:01 [task-result-getter-1] INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 1 (collect at Main.scala:37) finished in 0.048 s
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-04-02 22:15:01 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 1: Stage finished
+2025-04-02 22:15:01 [main] INFO  o.a.spark.scheduler.DAGScheduler - Job 1 finished: collect at Main.scala:37, took 0.052626 s
+2025-04-02 22:15:01 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 31.7339 ms
+2025-04-02 22:15:01 [main] INFO  Main$ - ########## dirty_cafe_sales ----> hdfs://localhost:9000/user/sabil/dirty/ -----> 0  ##########
+2025-04-02 22:15:02 [main] INFO  o.a.s.s.e.d.parquet.ParquetUtils - Using default output committer for Parquet: org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:15:02 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:15:02 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:15:02 [main] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:15:02 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:15:02 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:15:02 [main] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:15:02 [main] INFO  Main$ - ERROR IS >>>>>>>>>>>>>>>>>>>>> Call From YAU/192.168.1.37 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused: no further information; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused <<<<<<<<<<<<<<<<<
+2025-04-02 22:15:02 [main] INFO  org.apache.spark.SparkContext - SparkContext is stopping with exitCode 0.
+2025-04-02 22:15:02 [main] INFO  o.s.jetty.server.AbstractConnector - Stopped Spark@4eb1c69{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-04-02 22:15:02 [main] INFO  org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://YAU:4040
+2025-04-02 22:15:02 [dispatcher-event-loop-13] INFO  o.a.s.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+2025-04-02 22:15:02 [main] INFO  o.a.spark.storage.memory.MemoryStore - MemoryStore cleared
+2025-04-02 22:15:02 [main] INFO  o.apache.spark.storage.BlockManager - BlockManager stopped
+2025-04-02 22:15:02 [main] INFO  o.a.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+2025-04-02 22:15:02 [dispatcher-event-loop-1] INFO  o.a.s.s.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+2025-04-02 22:15:02 [main] INFO  org.apache.spark.SparkContext - Successfully stopped SparkContext
+2025-04-02 22:15:02 [shutdown-hook-0] INFO  o.a.spark.util.ShutdownHookManager - Shutdown hook called
+2025-04-02 22:15:02 [shutdown-hook-0] INFO  o.a.spark.util.ShutdownHookManager - Deleting directory C:\Users\shres\AppData\Local\Temp\spark-a38ccaf7-8aa9-40fb-ac8c-546a1a30b201
+2025-04-02 22:18:56 [main] INFO  org.apache.spark.SparkContext - Running Spark version 3.4.4
+2025-04-02 22:18:56 [main] INFO  o.a.spark.resource.ResourceUtils - ==============================================================
+2025-04-02 22:18:56 [main] INFO  o.a.spark.resource.ResourceUtils - No custom resources configured for spark.driver.
+2025-04-02 22:18:56 [main] INFO  o.a.spark.resource.ResourceUtils - ==============================================================
+2025-04-02 22:18:56 [main] INFO  org.apache.spark.SparkContext - Submitted application: mysql config
+2025-04-02 22:18:56 [main] INFO  o.a.spark.resource.ResourceProfile - Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2025-04-02 22:18:56 [main] INFO  o.a.spark.resource.ResourceProfile - Limiting resource is cpu
+2025-04-02 22:18:56 [main] INFO  o.a.s.r.ResourceProfileManager - Added ResourceProfile id: 0
+2025-04-02 22:18:56 [main] INFO  org.apache.spark.SecurityManager - Changing view acls to: shres
+2025-04-02 22:18:56 [main] INFO  org.apache.spark.SecurityManager - Changing modify acls to: shres
+2025-04-02 22:18:56 [main] INFO  org.apache.spark.SecurityManager - Changing view acls groups to: 
+2025-04-02 22:18:56 [main] INFO  org.apache.spark.SecurityManager - Changing modify acls groups to: 
+2025-04-02 22:18:56 [main] INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: shres; groups with view permissions: EMPTY; users with modify permissions: shres; groups with modify permissions: EMPTY
+2025-04-02 22:18:57 [main] INFO  org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 50893.
+2025-04-02 22:18:57 [main] INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+2025-04-02 22:18:57 [main] INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+2025-04-02 22:18:57 [main] INFO  o.a.s.s.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2025-04-02 22:18:57 [main] INFO  o.a.s.s.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+2025-04-02 22:18:57 [main] INFO  org.apache.spark.SparkEnv - Registering BlockManagerMasterHeartbeat
+2025-04-02 22:18:57 [main] INFO  o.a.spark.storage.DiskBlockManager - Created local directory at C:\Users\shres\AppData\Local\Temp\blockmgr-9308e1b0-2fa8-465f-89ad-d035762e21d2
+2025-04-02 22:18:57 [main] INFO  o.a.spark.storage.memory.MemoryStore - MemoryStore started with capacity 4.5 GiB
+2025-04-02 22:18:57 [main] INFO  org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+2025-04-02 22:18:57 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @2589ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-04-02 22:18:57 [main] INFO  org.apache.spark.ui.JettyUtils - Start Jetty 0.0.0.0:4040 for SparkUI
+2025-04-02 22:18:57 [main] INFO  o.sparkproject.jetty.server.Server - jetty-9.4.54.v20240208; built: 2024-02-08T19:42:39.027Z; git: cef3fbd6d736a21e7d541a5db490381d95a2047d; jvm 11.0.25+9-LTS-256
+2025-04-02 22:18:57 [main] INFO  o.sparkproject.jetty.server.Server - Started @2719ms
+2025-04-02 22:18:57 [main] INFO  o.s.jetty.server.AbstractConnector - Started ServerConnector@4eb1c69{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-04-02 22:18:57 [main] INFO  org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+2025-04-02 22:18:57 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7cea0110{/,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  org.apache.spark.executor.Executor - Starting executor ID driver on host YAU
+2025-04-02 22:18:58 [main] INFO  org.apache.spark.executor.Executor - Starting executor with user classpath (userClassPathFirst = false): ''
+2025-04-02 22:18:58 [main] INFO  org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 50944.
+2025-04-02 22:18:58 [main] INFO  o.a.s.n.n.NettyBlockTransferService - Server created on YAU:50944
+2025-04-02 22:18:58 [main] INFO  o.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2025-04-02 22:18:58 [main] INFO  o.a.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, YAU, 50944, None)
+2025-04-02 22:18:58 [dispatcher-BlockManagerMaster] INFO  o.a.s.s.BlockManagerMasterEndpoint - Registering block manager YAU:50944 with 4.5 GiB RAM, BlockManagerId(driver, YAU, 50944, None)
+2025-04-02 22:18:58 [main] INFO  o.a.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, YAU, 50944, None)
+2025-04-02 22:18:58 [main] INFO  o.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, YAU, 50944, None)
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@7cea0110{/,null,STOPPED,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@61514735{/jobs,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@655f69da{/jobs/json,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2e86807a{/jobs/job,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@590f0c50{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3a90c13c{/stages,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@188598ad{/stages/json,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2b7e8044{/stages/stage,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3a1706e1{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@63cf9de0{/stages/pool,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5befbac1{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1a565afb{/storage,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@949c598{/storage/json,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6bfaa0a6{/storage/rdd,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@314b9e4b{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@51dae791{/environment,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5de5e95{/environment/json,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@303c55fa{/executors,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7eb200ce{/executors/json,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7c2924d7{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6587305a{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f81621c{/static,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7c1447b5{/,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@24a2e565{/api,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@48a663e9{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3178219a{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@465b38e6{/metrics/json,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  Main$ - Application started!
+2025-04-02 22:18:58 [main] INFO  Main$ - hdfs
+2025-04-02 22:18:58 [main] INFO  Main$ - LOGGING TEST - LOAD MYSQL DATA TO HDFS
+2025-04-02 22:18:58 [main] INFO  o.a.spark.sql.internal.SharedState - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+2025-04-02 22:18:58 [main] INFO  o.a.spark.sql.internal.SharedState - Warehouse path is 'file:/C:/Users/shres/IdeaProjects/hadoop/spark-warehouse'.
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5dc769f9{/SQL,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@9b5f3c7{/SQL/json,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2e1b374c{/SQL/execution,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@9c93d16{/SQL/execution/json,null,AVAILABLE,@Spark}
+2025-04-02 22:18:58 [main] INFO  o.s.j.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5489b1f7{/static/sql,null,AVAILABLE,@Spark}
+2025-04-02 22:19:03 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 271.1623 ms
+2025-04-02 22:19:03 [main] INFO  org.apache.spark.SparkContext - Starting job: show at Main.scala:34
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Got job 0 (show at Main.scala:34) with 1 output partitions
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (show at Main.scala:34)
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (MapPartitionsRDD[2] at show at Main.scala:34), which has no missing parents
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 14.6 KiB, free 4.5 GiB)
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 7.0 KiB, free 4.5 GiB)
+2025-04-02 22:19:03 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on YAU:50944 (size: 7.0 KiB, free: 4.5 GiB)
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 0 from broadcast at DAGScheduler.scala:1540
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at show at Main.scala:34) (first 15 tasks are for partitions Vector(0))
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 1 tasks resource profile 0
+2025-04-02 22:19:03 [dispatcher-event-loop-6] INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0) (YAU, executor driver, partition 0, PROCESS_LOCAL, 8667 bytes) 
+2025-04-02 22:19:03 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+2025-04-02 22:19:03 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  o.a.s.s.e.datasources.jdbc.JDBCRDD - closed connection
+2025-04-02 22:19:03 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 1846 bytes result sent to driver
+2025-04-02 22:19:03 [task-result-getter-0] INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 186 ms on YAU (executor driver) (1/1)
+2025-04-02 22:19:03 [task-result-getter-0] INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 0 (show at Main.scala:34) finished in 0.488 s
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 0: Stage finished
+2025-04-02 22:19:03 [main] INFO  o.a.spark.scheduler.DAGScheduler - Job 0 finished: show at Main.scala:34, took 0.529605 s
+2025-04-02 22:19:03 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 25.5141 ms
+2025-04-02 22:19:03 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 14.6915 ms
+2025-04-02 22:19:03 [main] INFO  org.apache.spark.SparkContext - Starting job: collect at Main.scala:37
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Got job 1 (collect at Main.scala:37) with 1 output partitions
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 1 (collect at Main.scala:37)
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 1 (MapPartitionsRDD[5] at collect at Main.scala:37), which has no missing parents
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 13.1 KiB, free 4.5 GiB)
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.2 KiB, free 4.5 GiB)
+2025-04-02 22:19:03 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on YAU:50944 (size: 6.2 KiB, free: 4.5 GiB)
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:1540
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[5] at collect at Main.scala:37) (first 15 tasks are for partitions Vector(0))
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 1 tasks resource profile 0
+2025-04-02 22:19:03 [dispatcher-event-loop-9] INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 1.0 (TID 1) (YAU, executor driver, partition 0, PROCESS_LOCAL, 8667 bytes) 
+2025-04-02 22:19:03 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 1.0 (TID 1)
+2025-04-02 22:19:03 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  o.a.s.s.e.datasources.jdbc.JDBCRDD - closed connection
+2025-04-02 22:19:03 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 1.0 (TID 1). 1816 bytes result sent to driver
+2025-04-02 22:19:03 [task-result-getter-1] INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 1.0 (TID 1) in 38 ms on YAU (executor driver) (1/1)
+2025-04-02 22:19:03 [task-result-getter-1] INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 1 (collect at Main.scala:37) finished in 0.049 s
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-04-02 22:19:03 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 1: Stage finished
+2025-04-02 22:19:03 [main] INFO  o.a.spark.scheduler.DAGScheduler - Job 1 finished: collect at Main.scala:37, took 0.052379 s
+2025-04-02 22:19:04 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 32.5639 ms
+2025-04-02 22:19:04 [main] INFO  Main$ - ########## dirty_cafe_sales ----> hdfs://localhost:9000/user/sabil/dirty/ -----> 0  ##########
+2025-04-02 22:19:04 [main] INFO  o.a.s.s.e.d.parquet.ParquetUtils - Using default output committer for Parquet: org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:04 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:04 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:04 [main] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:04 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:04 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:04 [main] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:05 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 21.5973 ms
+2025-04-02 22:19:05 [main] INFO  org.apache.spark.SparkContext - Starting job: save at Main.scala:55
+2025-04-02 22:19:05 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Got job 2 (save at Main.scala:55) with 1 output partitions
+2025-04-02 22:19:05 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 2 (save at Main.scala:55)
+2025-04-02 22:19:05 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-04-02 22:19:05 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-04-02 22:19:05 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 2 (MapPartitionsRDD[8] at save at Main.scala:55), which has no missing parents
+2025-04-02 22:19:05 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Removed broadcast_1_piece0 on YAU:50944 in memory (size: 6.2 KiB, free: 4.5 GiB)
+2025-04-02 22:19:05 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Removed broadcast_0_piece0 on YAU:50944 in memory (size: 7.0 KiB, free: 4.5 GiB)
+2025-04-02 22:19:05 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_2 stored as values in memory (estimated size 214.4 KiB, free 4.5 GiB)
+2025-04-02 22:19:05 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_2_piece0 stored as bytes in memory (estimated size 76.9 KiB, free 4.5 GiB)
+2025-04-02 22:19:05 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_2_piece0 in memory on YAU:50944 (size: 76.9 KiB, free: 4.5 GiB)
+2025-04-02 22:19:05 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 2 from broadcast at DAGScheduler.scala:1540
+2025-04-02 22:19:05 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[8] at save at Main.scala:55) (first 15 tasks are for partitions Vector(0))
+2025-04-02 22:19:05 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 2.0 with 1 tasks resource profile 0
+2025-04-02 22:19:05 [dispatcher-event-loop-12] INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 2.0 (TID 2) (YAU, executor driver, partition 0, PROCESS_LOCAL, 8667 bytes) 
+2025-04-02 22:19:05 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 2.0 (TID 2)
+2025-04-02 22:19:05 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:05 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:05 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:05 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:05 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:05 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:05 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  o.a.parquet.hadoop.codec.CodecConfig - Compression: SNAPPY
+2025-04-02 22:19:05 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  o.a.parquet.hadoop.codec.CodecConfig - Compression: SNAPPY
+2025-04-02 22:19:05 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  o.a.p.hadoop.ParquetOutputFormat - ParquetRecordWriter [block size: 134217728b, row group padding size: 8388608b, validating: false]
+2025-04-02 22:19:05 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  o.a.s.s.e.d.p.ParquetWriteSupport - Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "Transaction ID",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "item",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "quantity",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "Price Per Unit",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "Total Spent",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "Payment Method",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "location",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "transaction_date",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary Transaction ID (STRING);
+  optional binary item (STRING);
+  optional binary quantity (STRING);
+  optional binary Price Per Unit (STRING);
+  optional binary Total Spent (STRING);
+  optional binary Payment Method (STRING);
+  optional binary location (STRING);
+  optional binary transaction_date (STRING);
+}
+
+       
+2025-04-02 22:19:05 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  o.a.hadoop.io.compress.CodecPool - Got brand-new compressor [.snappy]
+2025-04-02 22:19:05 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  o.a.s.s.e.datasources.jdbc.JDBCRDD - closed connection
+2025-04-02 22:19:06 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  o.a.h.m.l.output.FileOutputCommitter - Saved output of task 'attempt_202504022219057682568141392547750_0002_m_000000_2' to hdfs://localhost:9000/user/sabil/dirty/_temporary/0/task_202504022219057682568141392547750_0002_m_000000
+2025-04-02 22:19:06 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  o.a.s.mapred.SparkHadoopMapRedUtil - attempt_202504022219057682568141392547750_0002_m_000000_2: Committed. Elapsed time: 16 ms.
+2025-04-02 22:19:06 [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 2.0 (TID 2). 2785 bytes result sent to driver
+2025-04-02 22:19:06 [task-result-getter-2] INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 2.0 (TID 2) in 1629 ms on YAU (executor driver) (1/1)
+2025-04-02 22:19:06 [task-result-getter-2] INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2025-04-02 22:19:06 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 2 (save at Main.scala:55) finished in 1.677 s
+2025-04-02 22:19:06 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-04-02 22:19:06 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 2: Stage finished
+2025-04-02 22:19:06 [main] INFO  o.a.spark.scheduler.DAGScheduler - Job 2 finished: save at Main.scala:55, took 1.682421 s
+2025-04-02 22:19:06 [main] INFO  o.a.s.s.e.d.FileFormatWriter - Start to commit write Job fefa32d0-bb31-466a-b10c-41a589f4ed5d.
+2025-04-02 22:19:06 [main] INFO  o.a.s.s.e.d.FileFormatWriter - Write Job fefa32d0-bb31-466a-b10c-41a589f4ed5d committed. Elapsed time: 43 ms.
+2025-04-02 22:19:06 [main] INFO  o.a.s.s.e.d.FileFormatWriter - Finished processing stats for write job fefa32d0-bb31-466a-b10c-41a589f4ed5d.
+2025-04-02 22:19:06 [main] INFO  Main$ - ########## fraud_shrinked ----> hdfs://localhost:9000/user/sabil/fraud/ -----> 0  ##########
+2025-04-02 22:19:07 [main] INFO  o.a.s.s.e.d.parquet.ParquetUtils - Using default output committer for Parquet: org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:07 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:07 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:07 [main] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:07 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:07 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:07 [main] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:07 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 20.6701 ms
+2025-04-02 22:19:07 [main] INFO  org.apache.spark.SparkContext - Starting job: save at Main.scala:55
+2025-04-02 22:19:07 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Got job 3 (save at Main.scala:55) with 1 output partitions
+2025-04-02 22:19:07 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 3 (save at Main.scala:55)
+2025-04-02 22:19:07 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-04-02 22:19:07 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-04-02 22:19:07 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 3 (MapPartitionsRDD[11] at save at Main.scala:55), which has no missing parents
+2025-04-02 22:19:07 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_3 stored as values in memory (estimated size 215.7 KiB, free 4.5 GiB)
+2025-04-02 22:19:07 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_3_piece0 stored as bytes in memory (estimated size 77.2 KiB, free 4.5 GiB)
+2025-04-02 22:19:07 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_3_piece0 in memory on YAU:50944 (size: 77.2 KiB, free: 4.5 GiB)
+2025-04-02 22:19:07 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 3 from broadcast at DAGScheduler.scala:1540
+2025-04-02 22:19:07 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[11] at save at Main.scala:55) (first 15 tasks are for partitions Vector(0))
+2025-04-02 22:19:07 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 3.0 with 1 tasks resource profile 0
+2025-04-02 22:19:07 [dispatcher-event-loop-0] INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 3.0 (TID 3) (YAU, executor driver, partition 0, PROCESS_LOCAL, 8667 bytes) 
+2025-04-02 22:19:07 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 3.0 (TID 3)
+2025-04-02 22:19:07 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:07 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:07 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:07 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:07 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:07 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:07 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  o.a.parquet.hadoop.codec.CodecConfig - Compression: SNAPPY
+2025-04-02 22:19:07 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  o.a.parquet.hadoop.codec.CodecConfig - Compression: SNAPPY
+2025-04-02 22:19:07 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  o.a.p.hadoop.ParquetOutputFormat - ParquetRecordWriter [block size: 134217728b, row group padding size: 8388608b, validating: false]
+2025-04-02 22:19:07 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  o.a.s.s.e.d.p.ParquetWriteSupport - Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "step",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "type",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "nameorig",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "oldbalanceorg",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "newbalanceorig",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "namedest",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "oldbalancedest",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "newbalancedest",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "isfraud",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "isflaggedfraud",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional int32 step;
+  optional binary type (STRING);
+  optional double amount;
+  optional binary nameorig (STRING);
+  optional double oldbalanceorg;
+  optional double newbalanceorig;
+  optional binary namedest (STRING);
+  optional double oldbalancedest;
+  optional double newbalancedest;
+  optional int32 isfraud;
+  optional int32 isflaggedfraud;
+}
+
+       
+2025-04-02 22:19:07 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Removed broadcast_2_piece0 on YAU:50944 in memory (size: 76.9 KiB, free: 4.5 GiB)
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  o.a.s.s.e.datasources.jdbc.JDBCRDD - closed connection
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  o.a.h.m.l.output.FileOutputCommitter - Saved output of task 'attempt_202504022219075801464108212099716_0003_m_000000_3' to hdfs://localhost:9000/user/sabil/fraud/_temporary/0/task_202504022219075801464108212099716_0003_m_000000
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  o.a.s.mapred.SparkHadoopMapRedUtil - attempt_202504022219075801464108212099716_0003_m_000000_3: Committed. Elapsed time: 6 ms.
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 3.0 (TID 3)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 3.0 (TID 3). 2785 bytes result sent to driver
+2025-04-02 22:19:08 [task-result-getter-3] INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 3.0 (TID 3) in 1195 ms on YAU (executor driver) (1/1)
+2025-04-02 22:19:08 [task-result-getter-3] INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 3 (save at Main.scala:55) finished in 1.238 s
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 3: Stage finished
+2025-04-02 22:19:08 [main] INFO  o.a.spark.scheduler.DAGScheduler - Job 3 finished: save at Main.scala:55, took 1.243850 s
+2025-04-02 22:19:08 [main] INFO  o.a.s.s.e.d.FileFormatWriter - Start to commit write Job f1772468-acfd-4487-af36-23580c70b0f8.
+2025-04-02 22:19:08 [main] INFO  o.a.s.s.e.d.FileFormatWriter - Write Job f1772468-acfd-4487-af36-23580c70b0f8 committed. Elapsed time: 23 ms.
+2025-04-02 22:19:08 [main] INFO  o.a.s.s.e.d.FileFormatWriter - Finished processing stats for write job f1772468-acfd-4487-af36-23580c70b0f8.
+2025-04-02 22:19:08 [main] INFO  Main$ - ########## bank_transaction ----> hdfs://localhost:9000/user/sabil/bank/ -----> 0  ##########
+2025-04-02 22:19:08 [main] INFO  o.a.s.s.e.d.parquet.ParquetUtils - Using default output committer for Parquet: org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:08 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:08 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:08 [main] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:08 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:08 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:08 [main] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:08 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 17.5865 ms
+2025-04-02 22:19:08 [main] INFO  org.apache.spark.SparkContext - Starting job: save at Main.scala:55
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Got job 4 (save at Main.scala:55) with 1 output partitions
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 4 (save at Main.scala:55)
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 4 (MapPartitionsRDD[14] at save at Main.scala:55), which has no missing parents
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_4 stored as values in memory (estimated size 218.2 KiB, free 4.5 GiB)
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_4_piece0 stored as bytes in memory (estimated size 77.7 KiB, free 4.5 GiB)
+2025-04-02 22:19:08 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_4_piece0 in memory on YAU:50944 (size: 77.7 KiB, free: 4.5 GiB)
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 4 from broadcast at DAGScheduler.scala:1540
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[14] at save at Main.scala:55) (first 15 tasks are for partitions Vector(0))
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 4.0 with 1 tasks resource profile 0
+2025-04-02 22:19:08 [dispatcher-event-loop-4] INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 4.0 (TID 4) (YAU, executor driver, partition 0, PROCESS_LOCAL, 8667 bytes) 
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 4.0 (TID 4)
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  o.a.parquet.hadoop.codec.CodecConfig - Compression: SNAPPY
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  o.a.parquet.hadoop.codec.CodecConfig - Compression: SNAPPY
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  o.a.p.hadoop.ParquetOutputFormat - ParquetRecordWriter [block size: 134217728b, row group padding size: 8388608b, validating: false]
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  o.a.s.s.e.d.p.ParquetWriteSupport - Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "transactionid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "accountid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "transactionamount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "transactiondate",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "transactiontype",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "location",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "deviceid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "IP Address",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "merchantid",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "channel",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "customerage",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "customeroccupation",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "transactionduration",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "loginattempts",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "accountbalance",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "previoustransactiondate",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary transactionid (STRING);
+  optional binary accountid (STRING);
+  optional double transactionamount;
+  optional binary transactiondate (STRING);
+  optional binary transactiontype (STRING);
+  optional binary location (STRING);
+  optional binary deviceid (STRING);
+  optional binary IP Address (STRING);
+  optional binary merchantid (STRING);
+  optional binary channel (STRING);
+  optional int32 customerage;
+  optional binary customeroccupation (STRING);
+  optional int32 transactionduration;
+  optional int32 loginattempts;
+  optional double accountbalance;
+  optional binary previoustransactiondate (STRING);
+}
+
+       
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  o.a.s.s.e.datasources.jdbc.JDBCRDD - closed connection
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  o.a.h.m.l.output.FileOutputCommitter - Saved output of task 'attempt_202504022219088721253116672733180_0004_m_000000_4' to hdfs://localhost:9000/user/sabil/bank/_temporary/0/task_202504022219088721253116672733180_0004_m_000000
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  o.a.s.mapred.SparkHadoopMapRedUtil - attempt_202504022219088721253116672733180_0004_m_000000_4: Committed. Elapsed time: 6 ms.
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 4.0 (TID 4)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 4.0 (TID 4). 2742 bytes result sent to driver
+2025-04-02 22:19:08 [task-result-getter-0] INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 4.0 (TID 4) in 158 ms on YAU (executor driver) (1/1)
+2025-04-02 22:19:08 [task-result-getter-0] INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 4 (save at Main.scala:55) finished in 0.180 s
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 4: Stage finished
+2025-04-02 22:19:08 [main] INFO  o.a.spark.scheduler.DAGScheduler - Job 4 finished: save at Main.scala:55, took 0.184787 s
+2025-04-02 22:19:08 [main] INFO  o.a.s.s.e.d.FileFormatWriter - Start to commit write Job 3d621769-ce0a-496b-8c50-6a69bbcffee1.
+2025-04-02 22:19:08 [main] INFO  o.a.s.s.e.d.FileFormatWriter - Write Job 3d621769-ce0a-496b-8c50-6a69bbcffee1 committed. Elapsed time: 24 ms.
+2025-04-02 22:19:08 [main] INFO  o.a.s.s.e.d.FileFormatWriter - Finished processing stats for write job 3d621769-ce0a-496b-8c50-6a69bbcffee1.
+2025-04-02 22:19:08 [main] INFO  Main$ - ########## transaction ----> hdfs://localhost:9000/user/sabil/transaction/ -----> 1  ##########
+2025-04-02 22:19:08 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 13.247 ms
+2025-04-02 22:19:08 [main] INFO  org.apache.spark.SparkContext - Starting job: show at Main.scala:58
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Got job 5 (show at Main.scala:58) with 1 output partitions
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 5 (show at Main.scala:58)
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 5 (MapPartitionsRDD[17] at show at Main.scala:58), which has no missing parents
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_5 stored as values in memory (estimated size 13.2 KiB, free 4.5 GiB)
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_5_piece0 stored as bytes in memory (estimated size 6.3 KiB, free 4.5 GiB)
+2025-04-02 22:19:08 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_5_piece0 in memory on YAU:50944 (size: 6.3 KiB, free: 4.5 GiB)
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 5 from broadcast at DAGScheduler.scala:1540
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[17] at show at Main.scala:58) (first 15 tasks are for partitions Vector(0))
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 5.0 with 1 tasks resource profile 0
+2025-04-02 22:19:08 [dispatcher-event-loop-8] INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 5.0 (TID 5) (YAU, executor driver, partition 0, PROCESS_LOCAL, 8667 bytes) 
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 5.0 (TID 5)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 5.0 (TID 5)
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 5.0 (TID 5)] INFO  o.a.s.s.e.datasources.jdbc.JDBCRDD - closed connection
+2025-04-02 22:19:08 [Executor task launch worker for task 0.0 in stage 5.0 (TID 5)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 5.0 (TID 5). 4233 bytes result sent to driver
+2025-04-02 22:19:08 [task-result-getter-1] INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 5.0 (TID 5) in 61 ms on YAU (executor driver) (1/1)
+2025-04-02 22:19:08 [task-result-getter-1] INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 5 (show at Main.scala:58) finished in 0.070 s
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-04-02 22:19:08 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 5: Stage finished
+2025-04-02 22:19:08 [main] INFO  o.a.spark.scheduler.DAGScheduler - Job 5 finished: show at Main.scala:58, took 0.074805 s
+2025-04-02 22:19:08 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 13.8921 ms
+2025-04-02 22:19:08 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 25.9993 ms
+2025-04-02 22:19:08 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 7.8397 ms
+2025-04-02 22:19:09 [main] INFO  org.apache.spark.SparkContext - Starting job: first at Main.scala:66
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Got job 6 (first at Main.scala:66) with 1 output partitions
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 6 (first at Main.scala:66)
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 6 (MapPartitionsRDD[21] at first at Main.scala:66), which has no missing parents
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_6 stored as values in memory (estimated size 13.1 KiB, free 4.5 GiB)
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_6_piece0 stored as bytes in memory (estimated size 6.4 KiB, free 4.5 GiB)
+2025-04-02 22:19:09 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_6_piece0 in memory on YAU:50944 (size: 6.4 KiB, free: 4.5 GiB)
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 6 from broadcast at DAGScheduler.scala:1540
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 6 (MapPartitionsRDD[21] at first at Main.scala:66) (first 15 tasks are for partitions Vector(0))
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 6.0 with 1 tasks resource profile 0
+2025-04-02 22:19:09 [dispatcher-event-loop-11] INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 6.0 (TID 6) (YAU, executor driver, partition 0, PROCESS_LOCAL, 8667 bytes) 
+2025-04-02 22:19:09 [Executor task launch worker for task 0.0 in stage 6.0 (TID 6)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 6.0 (TID 6)
+2025-04-02 22:19:09 [Executor task launch worker for task 0.0 in stage 6.0 (TID 6)] INFO  o.a.s.s.e.datasources.jdbc.JDBCRDD - closed connection
+2025-04-02 22:19:09 [Executor task launch worker for task 0.0 in stage 6.0 (TID 6)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 6.0 (TID 6). 1648 bytes result sent to driver
+2025-04-02 22:19:09 [task-result-getter-2] INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 6.0 (TID 6) in 80 ms on YAU (executor driver) (1/1)
+2025-04-02 22:19:09 [task-result-getter-2] INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 6.0, whose tasks have all completed, from pool 
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 6 (first at Main.scala:66) finished in 0.089 s
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Job 6 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 6: Stage finished
+2025-04-02 22:19:09 [main] INFO  o.a.spark.scheduler.DAGScheduler - Job 6 finished: first at Main.scala:66, took 0.092858 s
+2025-04-02 22:19:09 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 11.2969 ms
+2025-04-02 22:19:09 [main] INFO  Main$ - ################# LATEST DATE 2025-03-26T02:53:31 ----> PREVIOUS DATE 2025-03-25T02:53:31 #######################
+2025-04-02 22:19:09 [main] INFO  o.a.s.s.e.d.InMemoryFileIndex - It took 35 ms to list leaf files for 1 paths.
+2025-04-02 22:19:09 [main] INFO  org.apache.spark.SparkContext - Starting job: load at update_parquet.scala:18
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Got job 7 (load at update_parquet.scala:18) with 1 output partitions
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 7 (load at update_parquet.scala:18)
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 7 (MapPartitionsRDD[23] at load at update_parquet.scala:18), which has no missing parents
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_7 stored as values in memory (estimated size 102.9 KiB, free 4.5 GiB)
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_7_piece0 stored as bytes in memory (estimated size 37.0 KiB, free 4.5 GiB)
+2025-04-02 22:19:09 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_7_piece0 in memory on YAU:50944 (size: 37.0 KiB, free: 4.5 GiB)
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 7 from broadcast at DAGScheduler.scala:1540
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 7 (MapPartitionsRDD[23] at load at update_parquet.scala:18) (first 15 tasks are for partitions Vector(0))
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 7.0 with 1 tasks resource profile 0
+2025-04-02 22:19:09 [dispatcher-event-loop-14] INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 7.0 (TID 7) (YAU, executor driver, partition 0, PROCESS_LOCAL, 9092 bytes) 
+2025-04-02 22:19:09 [Executor task launch worker for task 0.0 in stage 7.0 (TID 7)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 7.0 (TID 7)
+2025-04-02 22:19:09 [Executor task launch worker for task 0.0 in stage 7.0 (TID 7)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 7.0 (TID 7). 2377 bytes result sent to driver
+2025-04-02 22:19:09 [task-result-getter-3] INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 7.0 (TID 7) in 187 ms on YAU (executor driver) (1/1)
+2025-04-02 22:19:09 [task-result-getter-3] INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 7.0, whose tasks have all completed, from pool 
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 7 (load at update_parquet.scala:18) finished in 0.206 s
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 7: Stage finished
+2025-04-02 22:19:09 [main] INFO  o.a.spark.scheduler.DAGScheduler - Job 7 finished: load at update_parquet.scala:18, took 0.208855 s
+2025-04-02 22:19:09 [main] INFO  o.a.s.s.e.d.FileSourceStrategy - Pushed Filters: 
+2025-04-02 22:19:09 [main] INFO  o.a.s.s.e.d.FileSourceStrategy - Post-Scan Filters: 
+2025-04-02 22:19:09 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 13.3399 ms
+2025-04-02 22:19:09 [main] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_8 stored as values in memory (estimated size 200.0 KiB, free 4.5 GiB)
+2025-04-02 22:19:09 [main] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_8_piece0 stored as bytes in memory (estimated size 34.6 KiB, free 4.5 GiB)
+2025-04-02 22:19:09 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_8_piece0 in memory on YAU:50944 (size: 34.6 KiB, free: 4.5 GiB)
+2025-04-02 22:19:09 [main] INFO  org.apache.spark.SparkContext - Created broadcast 8 from isEmpty at update_parquet.scala:19
+2025-04-02 22:19:09 [main] INFO  o.a.s.s.execution.FileSourceScanExec - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2025-04-02 22:19:09 [main] INFO  org.apache.spark.SparkContext - Starting job: isEmpty at update_parquet.scala:19
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Got job 8 (isEmpty at update_parquet.scala:19) with 1 output partitions
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 8 (isEmpty at update_parquet.scala:19)
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 8 (MapPartitionsRDD[27] at isEmpty at update_parquet.scala:19), which has no missing parents
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_9 stored as values in memory (estimated size 11.3 KiB, free 4.5 GiB)
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_9_piece0 stored as bytes in memory (estimated size 5.4 KiB, free 4.5 GiB)
+2025-04-02 22:19:09 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_9_piece0 in memory on YAU:50944 (size: 5.4 KiB, free: 4.5 GiB)
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 9 from broadcast at DAGScheduler.scala:1540
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 8 (MapPartitionsRDD[27] at isEmpty at update_parquet.scala:19) (first 15 tasks are for partitions Vector(0))
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 8.0 with 1 tasks resource profile 0
+2025-04-02 22:19:09 [dispatcher-event-loop-2] INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 8.0 (TID 8) (YAU, executor driver, partition 0, NODE_LOCAL, 9450 bytes) 
+2025-04-02 22:19:09 [Executor task launch worker for task 0.0 in stage 8.0 (TID 8)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 8.0 (TID 8)
+2025-04-02 22:19:09 [Executor task launch worker for task 0.0 in stage 8.0 (TID 8)] INFO  o.a.s.s.e.datasources.FileScanRDD - Reading File path: hdfs://localhost:9000/user/sabil/transaction/part-00000-955706fc-04bf-43c8-9b7c-3732ac41b5f2-c000.snappy.parquet, range: 0-125158, partition values: [empty row]
+2025-04-02 22:19:09 [Executor task launch worker for task 0.0 in stage 8.0 (TID 8)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 8.0 (TID 8). 1753 bytes result sent to driver
+2025-04-02 22:19:09 [task-result-getter-0] INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 8.0 (TID 8) in 111 ms on YAU (executor driver) (1/1)
+2025-04-02 22:19:09 [task-result-getter-0] INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 8.0, whose tasks have all completed, from pool 
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 8 (isEmpty at update_parquet.scala:19) finished in 0.132 s
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Job 8 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-04-02 22:19:09 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 8: Stage finished
+2025-04-02 22:19:09 [main] INFO  o.a.spark.scheduler.DAGScheduler - Job 8 finished: isEmpty at update_parquet.scala:19, took 0.138904 s
+2025-04-02 22:19:09 [main] INFO  o.a.s.s.e.d.FileSourceStrategy - Pushed Filters: 
+2025-04-02 22:19:09 [main] INFO  o.a.s.s.e.d.FileSourceStrategy - Post-Scan Filters: 
+2025-04-02 22:19:10 [main] INFO  o.a.s.s.e.a.HashAggregateExec - spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+2025-04-02 22:19:10 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 35.0495 ms
+2025-04-02 22:19:10 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 16.0445 ms
+2025-04-02 22:19:10 [main] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_10 stored as values in memory (estimated size 201.1 KiB, free 4.5 GiB)
+2025-04-02 22:19:10 [main] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_10_piece0 stored as bytes in memory (estimated size 35.0 KiB, free 4.5 GiB)
+2025-04-02 22:19:10 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_10_piece0 in memory on YAU:50944 (size: 35.0 KiB, free: 4.5 GiB)
+2025-04-02 22:19:10 [main] INFO  org.apache.spark.SparkContext - Created broadcast 10 from save at update_parquet.scala:46
+2025-04-02 22:19:10 [main] INFO  o.a.s.s.execution.FileSourceScanExec - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2025-04-02 22:19:10 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 14.8172 ms
+2025-04-02 22:19:10 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Registering RDD 35 (save at update_parquet.scala:46) as input to shuffle 0
+2025-04-02 22:19:10 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Got map stage job 9 (save at update_parquet.scala:46) with 2 output partitions
+2025-04-02 22:19:10 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ShuffleMapStage 9 (save at update_parquet.scala:46)
+2025-04-02 22:19:10 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-04-02 22:19:10 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-04-02 22:19:10 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting ShuffleMapStage 9 (MapPartitionsRDD[35] at save at update_parquet.scala:46), which has no missing parents
+2025-04-02 22:19:10 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_11 stored as values in memory (estimated size 46.8 KiB, free 4.5 GiB)
+2025-04-02 22:19:10 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_11_piece0 stored as bytes in memory (estimated size 18.9 KiB, free 4.5 GiB)
+2025-04-02 22:19:10 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_11_piece0 in memory on YAU:50944 (size: 18.9 KiB, free: 4.5 GiB)
+2025-04-02 22:19:10 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 11 from broadcast at DAGScheduler.scala:1540
+2025-04-02 22:19:10 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ShuffleMapStage 9 (MapPartitionsRDD[35] at save at update_parquet.scala:46) (first 15 tasks are for partitions Vector(0, 1))
+2025-04-02 22:19:10 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 9.0 with 2 tasks resource profile 0
+2025-04-02 22:19:10 [dispatcher-event-loop-4] INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 9.0 (TID 9) (YAU, executor driver, partition 0, NODE_LOCAL, 9548 bytes) 
+2025-04-02 22:19:10 [dispatcher-event-loop-4] INFO  o.a.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 9.0 (TID 10) (YAU, executor driver, partition 1, PROCESS_LOCAL, 8765 bytes) 
+2025-04-02 22:19:10 [Executor task launch worker for task 0.0 in stage 9.0 (TID 9)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 9.0 (TID 9)
+2025-04-02 22:19:10 [Executor task launch worker for task 1.0 in stage 9.0 (TID 10)] INFO  org.apache.spark.executor.Executor - Running task 1.0 in stage 9.0 (TID 10)
+2025-04-02 22:19:10 [Executor task launch worker for task 0.0 in stage 9.0 (TID 9)] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 17.221 ms
+2025-04-02 22:19:10 [Executor task launch worker for task 0.0 in stage 9.0 (TID 9)] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 6.1936 ms
+2025-04-02 22:19:10 [Executor task launch worker for task 1.0 in stage 9.0 (TID 10)] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 11.6765 ms
+2025-04-02 22:19:10 [Executor task launch worker for task 0.0 in stage 9.0 (TID 9)] INFO  o.a.s.s.e.datasources.FileScanRDD - Reading File path: hdfs://localhost:9000/user/sabil/transaction/part-00000-955706fc-04bf-43c8-9b7c-3732ac41b5f2-c000.snappy.parquet, range: 0-125158, partition values: [empty row]
+2025-04-02 22:19:10 [Executor task launch worker for task 1.0 in stage 9.0 (TID 10)] INFO  o.a.s.s.e.datasources.jdbc.JDBCRDD - closed connection
+2025-04-02 22:19:10 [Executor task launch worker for task 0.0 in stage 9.0 (TID 9)] INFO  o.a.hadoop.io.compress.CodecPool - Got brand-new decompressor [.snappy]
+2025-04-02 22:19:12 [Executor task launch worker for task 1.0 in stage 9.0 (TID 10)] INFO  org.apache.spark.executor.Executor - Finished task 1.0 in stage 9.0 (TID 10). 3234 bytes result sent to driver
+2025-04-02 22:19:12 [Executor task launch worker for task 0.0 in stage 9.0 (TID 9)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 9.0 (TID 9). 3277 bytes result sent to driver
+2025-04-02 22:19:12 [task-result-getter-1] INFO  o.a.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 9.0 (TID 10) in 2402 ms on YAU (executor driver) (1/2)
+2025-04-02 22:19:12 [task-result-getter-2] INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 9.0 (TID 9) in 2407 ms on YAU (executor driver) (2/2)
+2025-04-02 22:19:12 [task-result-getter-2] INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 9.0, whose tasks have all completed, from pool 
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - ShuffleMapStage 9 (save at update_parquet.scala:46) finished in 2.433 s
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - looking for newly runnable stages
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - running: HashSet()
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - waiting: HashSet()
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - failed: HashSet()
+2025-04-02 22:19:12 [main] INFO  o.a.s.s.e.a.ShufflePartitionsUtil - For shuffle(0), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+2025-04-02 22:19:12 [main] INFO  o.a.s.s.e.d.parquet.ParquetUtils - Using default output committer for Parquet: org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:12 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:12 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:12 [main] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:12 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:12 [main] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:12 [main] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:12 [main] INFO  o.a.s.s.e.a.HashAggregateExec - spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+2025-04-02 22:19:12 [main] INFO  o.a.s.s.c.e.codegen.CodeGenerator - Code generated in 11.5115 ms
+2025-04-02 22:19:12 [main] INFO  org.apache.spark.SparkContext - Starting job: save at update_parquet.scala:46
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Got job 10 (save at update_parquet.scala:46) with 1 output partitions
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 11 (save at update_parquet.scala:46)
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 10)
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 11 (MapPartitionsRDD[38] at save at update_parquet.scala:46), which has no missing parents
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_12 stored as values in memory (estimated size 243.5 KiB, free 4.5 GiB)
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  o.a.spark.storage.memory.MemoryStore - Block broadcast_12_piece0 stored as bytes in memory (estimated size 89.0 KiB, free 4.5 GiB)
+2025-04-02 22:19:12 [dispatcher-BlockManagerMaster] INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_12_piece0 in memory on YAU:50944 (size: 89.0 KiB, free: 4.5 GiB)
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 12 from broadcast at DAGScheduler.scala:1540
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 11 (MapPartitionsRDD[38] at save at update_parquet.scala:46) (first 15 tasks are for partitions Vector(0))
+2025-04-02 22:19:12 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 11.0 with 1 tasks resource profile 0
+2025-04-02 22:19:12 [dispatcher-event-loop-10] INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 11.0 (TID 11) (YAU, executor driver, partition 0, NODE_LOCAL, 8821 bytes) 
+2025-04-02 22:19:12 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 11.0 (TID 11)
+2025-04-02 22:19:12 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  o.a.s.s.ShuffleBlockFetcherIterator - Getting 2 (1173.7 KiB) non-empty blocks including 2 (1173.7 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+2025-04-02 22:19:12 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  o.a.s.s.ShuffleBlockFetcherIterator - Started 0 remote fetches in 20 ms
+2025-04-02 22:19:12 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:12 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:12 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:12 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  o.a.h.m.l.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2025-04-02 22:19:12 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  o.a.h.m.l.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2025-04-02 22:19:12 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  o.a.s.s.e.d.SQLHadoopMapReduceCommitProtocol - Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2025-04-02 22:19:12 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  o.a.parquet.hadoop.codec.CodecConfig - Compression: SNAPPY
+2025-04-02 22:19:12 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  o.a.parquet.hadoop.codec.CodecConfig - Compression: SNAPPY
+2025-04-02 22:19:12 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  o.a.p.hadoop.ParquetOutputFormat - ParquetRecordWriter [block size: 134217728b, row group padding size: 8388608b, validating: false]
+2025-04-02 22:19:12 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  o.a.s.s.e.d.p.ParquetWriteSupport - Initialized Parquet WriteSupport with Catalyst schema:
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "customer_id",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "zipcode",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "category",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "merchant_name",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "mapped_category",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "transaction_amount",
+    "type" : "double",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  }, {
+    "name" : "timestamp",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "scale" : 0
+    }
+  } ]
+}
+and corresponding Parquet message type:
+message spark_schema {
+  optional binary customer_id (STRING);
+  optional double zipcode;
+  optional binary category (STRING);
+  optional binary merchant_name (STRING);
+  optional binary mapped_category (STRING);
+  optional double transaction_amount;
+  optional binary timestamp (STRING);
+}
+
+       
+2025-04-02 22:19:13 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  o.a.h.m.l.output.FileOutputCommitter - Saved output of task 'attempt_202504022219127515919123562573004_0011_m_000000_11' to hdfs://localhost:9000/user/sabil/transaction/_temporary/0/task_202504022219127515919123562573004_0011_m_000000
+2025-04-02 22:19:13 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  o.a.s.mapred.SparkHadoopMapRedUtil - attempt_202504022219127515919123562573004_0011_m_000000_11: Committed. Elapsed time: 6 ms.
+2025-04-02 22:19:13 [Executor task launch worker for task 0.0 in stage 11.0 (TID 11)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 11.0 (TID 11). 6784 bytes result sent to driver
+2025-04-02 22:19:13 [task-result-getter-3] INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 11.0 (TID 11) in 219 ms on YAU (executor driver) (1/1)
+2025-04-02 22:19:13 [task-result-getter-3] INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 11.0, whose tasks have all completed, from pool 
+2025-04-02 22:19:13 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 11 (save at update_parquet.scala:46) finished in 0.257 s
+2025-04-02 22:19:13 [dag-scheduler-event-loop] INFO  o.a.spark.scheduler.DAGScheduler - Job 10 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-04-02 22:19:13 [dag-scheduler-event-loop] INFO  o.a.s.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 11: Stage finished
+2025-04-02 22:19:13 [main] INFO  o.a.spark.scheduler.DAGScheduler - Job 10 finished: save at update_parquet.scala:46, took 0.269958 s
+2025-04-02 22:19:13 [main] INFO  o.a.s.s.e.d.FileFormatWriter - Start to commit write Job 6cc4b4ca-afaa-4ea6-a9f4-dc94c29b4c8d.
+2025-04-02 22:19:13 [main] INFO  o.a.s.s.e.d.FileFormatWriter - Write Job 6cc4b4ca-afaa-4ea6-a9f4-dc94c29b4c8d committed. Elapsed time: 22 ms.
+2025-04-02 22:19:13 [main] INFO  o.a.s.s.e.d.FileFormatWriter - Finished processing stats for write job 6cc4b4ca-afaa-4ea6-a9f4-dc94c29b4c8d.
+2025-04-02 22:19:13 [main] INFO  functions.update_parquet$ - Delta load completed for timestamp
+2025-04-02 22:19:13 [main] INFO  Main$ -  }}}}}}}}}}}}}}}}}} SUCCESSFULLY CONDUCTED ALL STEPS {{{{{{{{{{{{{{{{{
+2025-04-02 22:19:13 [main] INFO  org.apache.spark.SparkContext - SparkContext is stopping with exitCode 0.
+2025-04-02 22:19:13 [main] INFO  o.s.jetty.server.AbstractConnector - Stopped Spark@4eb1c69{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-04-02 22:19:13 [main] INFO  org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://YAU:4040
+2025-04-02 22:19:13 [dispatcher-event-loop-15] INFO  o.a.s.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+2025-04-02 22:19:13 [main] INFO  o.a.spark.storage.memory.MemoryStore - MemoryStore cleared
+2025-04-02 22:19:13 [main] INFO  o.apache.spark.storage.BlockManager - BlockManager stopped
+2025-04-02 22:19:13 [main] INFO  o.a.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+2025-04-02 22:19:13 [dispatcher-event-loop-3] INFO  o.a.s.s.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+2025-04-02 22:19:13 [main] INFO  org.apache.spark.SparkContext - Successfully stopped SparkContext
+2025-04-02 22:19:13 [shutdown-hook-0] INFO  o.a.spark.util.ShutdownHookManager - Shutdown hook called
+2025-04-02 22:19:13 [shutdown-hook-0] INFO  o.a.spark.util.ShutdownHookManager - Deleting directory C:\Users\shres\AppData\Local\Temp\spark-5b7e6040-5b1a-4edc-b36a-860a12dbfec0

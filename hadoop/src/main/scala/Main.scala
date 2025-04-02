@@ -1,13 +1,9 @@
 import com.typesafe.scalalogging.LazyLogging
 import functions.date.formatDate
-import functions.get_df_from_tablename.{
-  get_df_from_tableName,
-  update_column_of_table
-}
+import functions.df_functions.{get_df_from_tableName, run_sql}
 import functions.update_parquet.update_parquet
-import org.apache.spark.sql.functions.{col, current_timestamp, when}
+import org.apache.spark.sql.functions.{col, current_timestamp}
 import org.apache.spark.sql.{SaveMode, SparkSession}
-
 import java.time.format.DateTimeFormatter
 
 object Main extends LazyLogging {
@@ -21,9 +17,18 @@ object Main extends LazyLogging {
 
     //################# LOGGING TEST
     logger.info("Application started!")
-    logger.debug("This is a debug message")
-    logger.error("An error occurred")
     //#################
+
+    //################# ARGUMENTS #################
+    val argument1 = args.lift(0).getOrElse("default_argument_file");
+    val argument2 = args.lift(1).getOrElse("default_argument_2");
+
+    logger.info(argument1, "_________________", argument2);
+
+    if (argument1 == "hdfs") {
+      logger.info("LOGGING TEST - LOAD MYSQL DATA TO HDFS")
+    }
+    //################# ############# #################
 
     val df_config = get_df_from_tableName(spark = spark, tableName = "config");
     df_config.show()
@@ -32,9 +37,6 @@ object Main extends LazyLogging {
       val df_config_arr_orginal = df_config.collect();
       var row_index = 1;
       df_config_arr_orginal.foreach(row => {
-        val df_config_table_updated =
-          get_df_from_tableName(spark = spark, tableName = "config");
-
         val source_table = row.getAs[String]("source_table");
         val hadoop_destination = row.getAs[String]("hadoop_destination");
         val is_increment = row.getAs[Int]("is_increment");
@@ -45,23 +47,8 @@ object Main extends LazyLogging {
         val df_source =
           get_df_from_tableName(spark = spark, tableName = source_table);
 
-        // ######################################  UPDATE CONFIG TABLE (START DATE) #############################
-        val df_updated_config_startDate = df_config_table_updated.withColumn(
-          "start_date",
-          when(col("id") === row_index, current_timestamp()).otherwise(
-            col("start_date")
-          )
-        );
-        df_updated_config_startDate.show();
-        update_column_of_table(
-          df_source = df_updated_config_startDate,
-          tableName = "config"
-        )
-        //####################################################################################################
-
         if (is_increment == 0) {
           //full load
-
           df_source.write
             .format("parquet")
             .mode(SaveMode.Append)
@@ -109,24 +96,19 @@ object Main extends LazyLogging {
         }
 
         // ############################ UPDATE CONFIG TABLE (END DATE)#############################
-        val df_updated_config_endDate =
-          df_updated_config_startDate.withColumn(
-            "end_date",
-            when(col("id") === row_index, current_timestamp()).otherwise(
-              col("end_date")
-            )
-          );
-        df_updated_config_endDate.show();
-        update_column_of_table(
-          df_source = df_updated_config_endDate,
-          tableName = "config"
+//        val currentTime = LocalDateTime.now();
+        run_sql(sqlStatement =
+          s"UPDATE config SET start_date=${current_timestamp()} ,end_date=${current_timestamp()} where id=$row_index"
         )
+
         //#######################################################################################
         row_index += 1
 
       })
 
-      println(" SUCCESSFULLY CONDUCTED ALL STEPS")
+      logger.info(
+        " }}}}}}}}}}}}}}}}}} SUCCESSFULLY CONDUCTED ALL STEPS {{{{{{{{{{{{{{{{{"
+      )
 
     } catch {
       case e: Exception =>

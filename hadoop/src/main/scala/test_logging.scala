@@ -1,9 +1,6 @@
 import com.typesafe.scalalogging.LazyLogging
 import org.apache.spark.sql.{SaveMode, SparkSession}
-import functions.get_df_from_tablename.{
-  get_df_from_tableName,
-  update_column_of_table
-}
+import functions.df_functions.{get_df_from_tableName, update_column_of_table}
 import org.apache.spark.sql.functions.{col, current_timestamp, when}
 
 object test_logging extends LazyLogging {
