@@ -12,6 +12,9 @@ object df_functions extends LazyLogging {
   val user = "root"
   val password = "admin"
 
+  // Register MySQL driver
+  Class.forName("com.mysql.cj.jdbc.Driver")
+
   def get_df_from_tableName(
       spark: SparkSession,
       tableName: String,
@@ -22,9 +25,10 @@ object df_functions extends LazyLogging {
       .options(
         Map(
           "url" -> jdbcUrl,
-          "dbTable" -> tableName,
+          "dbtable" -> tableName,
           "user" -> user,
-          "password" -> password
+          "password" -> password,
+          "driver" -> "com.mysql.cj.jdbc.Driver"
         )
       )
       .load()
@@ -64,7 +68,7 @@ object df_functions extends LazyLogging {
       .options(
         Map(
           "url" -> jdbcUrl,
-          "dbTable" -> tempTable, //this is the main part to create a new table
+          "dbtable" -> tempTable, //this is the main part to create a new table
           "user" -> user,
           "password" -> password,
           "driver" -> "com.mysql.cj.jdbc.Driver"
